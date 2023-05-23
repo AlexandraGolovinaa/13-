@@ -5,7 +5,7 @@ root = Tk()
 
 def get_weather():
     city = cityField.get()
-    key = '38b89f6be38ff619ec852e99513b6845'
+    key = '3eea6a872a1ee1f3ddd68f714e9865a5'
     url = 'http://api.openweathermap.org/data/2.5/weather'
     params = {'APPID': key, 'q': city, 'units': 'metric'}
     result = requests.get(url, params=params)
