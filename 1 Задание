@@ -1,10 +1,10 @@
 from tkinter import *
-import requests # библиотека для работы с отправкой URL запросов
-root = Tk() # Создаем главный объект (окно приложения)
+import requests 
+
+root = Tk() 
 
 def get_weather():
     city = cityField.get()
-
     key = '38b89f6be38ff619ec852e99513b6845'
     url = 'http://api.openweathermap.org/data/2.5/weather'
     params = {'APPID': key, 'q': city, 'units': 'metric'}
